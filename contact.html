@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="chatbot.html">Chat</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<h2 style="text-align:center;">📩 Raise Support Ticket</h2>
+
+<form onsubmit="return submitForm()" class="contact-form">
+    <input type="text" id="name" placeholder="Your Name"><br><br>
+    <input type="text" id="issue" placeholder="Describe your issue"><br><br>
+    <button type="submit">Submit</button>
+</form>
+
+<p id="msg" style="text-align:center;"></p>
+
+<script>
+function submitForm() {
+    document.getElementById("msg").innerText = "✅ Ticket submitted successfully!";
+    return false;
+}
+</script>
+
+</body>
+</html>

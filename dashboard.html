@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+</div>
+
+<h2 style="text-align:center; color:white;">👨‍💼 Admin Dashboard</h2>
+
+<table border="1" align="center" cellpadding="10" style="background:white;">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Branch</th>
+            <th>Roll No</th>
+            <th>Complaint</th>
+            <th>Status</th>
+            <th>Response</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody id="adminTable"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+<script>
+    // FORCE LOAD
+    window.onload = function() {
+        loadAdmin();
+    };
+</script>
+
+</body>
+</html>

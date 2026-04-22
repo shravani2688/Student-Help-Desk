@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complaints</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+</div>
+
+<h2 style="text-align:center; color:white;">📩 Raise Complaint</h2>
+
+<div class="chat-container">
+
+    <input type="text" id="name" placeholder="Name"><br><br>
+    <input type="text" id="branch" placeholder="Branch"><br><br>
+    <input type="text" id="roll" placeholder="Roll No"><br><br>
+
+    <textarea id="message" placeholder="Enter complaint"></textarea><br><br>
+
+    <button onclick="submitComplaint()">Submit</button>
+
+    <p id="response"></p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
